@@ -1,0 +1,21 @@
+[submodule "grpc"]
+	path = grpc
+	url = git@github.com:kyechou/grpc.git
+[submodule "grpc-git"]
+	path = grpc-git
+	url = git@github.com:kyechou/grpc-git.git
+[submodule "rpclib"]
+	path = rpclib
+	url = git@github.com:kyechou/rpclib.git
+[submodule "rpclib-git"]
+	path = rpclib-git
+	url = git@github.com:kyechou/rpclib-git.git
+[submodule "tensorflow"]
+	path = tensorflow
+	url = git@github.com:kyechou/tensorflow.git
+[submodule "tensorflow-pkg"]
+	path = tensorflow-pkg
+	url = git@github.com:kyechou/tensorflow-pkg.git
+[submodule "timestamping"]
+	path = timestamping
+	url = git@github.com:kyechou/timestamping.git

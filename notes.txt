@@ -1,0 +1,32 @@
+- Problem
+	- Bring Network Transparency to Distributed Execution
+	- What are the limitations on current tracing tools?
+	- Currently the granularity is an RPC call/MPI Call: Dapper, IPM
+	- As a results effect of network conditions are immediately considered in these systems?
+	- What kind of application needs this?
+	- Examples:
+		- PS vs AR [TODO]
+		- Contentions in OS [TODO]
+- Challenges
+	- Network Tracing deals with packets
+	- MPI/RPC may be multiple packets
+	- Out-of-band trace collection 
+	- Two-Body Problem
+		- Full packers call has 4 different pieces on two different locations
+	- Overhead
+		- TODO
+	- Time synchronization between hosts
+		- NTP is not enough ms
+		- PTP is barely enough us
+		- HUYGENS may be enough ns (needs HW support)
+	- Missing data by the kernel if the network condition is bad
+- Stories
+	- Effect of Congesstion
+	- Effect of Aggregation Mechanism
+- Experiments
+	- Simple
+		- 1w1s: Size = 10**[1-9]
+	- Incast/Outcast
+		- Nw1s: Size=1k,10k, N=2**[0-6]
+	- TF
+		- 1w1ps: resnet/inception, responses 
