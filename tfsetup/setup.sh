@@ -41,7 +41,7 @@ chmod +x "$SCRIPT_DIR/bazel-0.19.2"
   export CC_OPT_FLAGS="-march=native"
   export TF_NEED_CUDA=0
   ./configure
-  "${SCRIPT_DIR}/bazel-0.19.2" -c opt \
+  "${SCRIPT_DIR}/bazel-0.19.2" --config=opt \
       //tensorflow:libtensorflow.so \
       //tensorflow/tools/pip_package:build_pip_package
   bazel-bin/tensorflow/tools/pip_package/build_pip_package ${SCRIPT_DIR}/tmp
