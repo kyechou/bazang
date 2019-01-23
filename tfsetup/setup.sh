@@ -7,6 +7,7 @@ cd "$SCRIPT_DIR/../tensorflow"
 
 curl -L -o "$SCRIPT_DIR/bazel-0.19.2" \
   https://github.com/bazelbuild/bazel/releases/download/0.19.2/bazel-0.19.2-linux-x86_64
+chmod +x "$SCRIPT_DIR/bazel-0.19.2"
 
 ## prepare
   git co master ; git reset --hard HEAD
